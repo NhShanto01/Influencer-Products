@@ -129,19 +129,53 @@ Popular Collection
 /*-------------
   Join Our Community
 ------------- */
-
-.Community-title{
-    text-align: center;
+.community{
+    display: flex;
 }
-.Community-form{
-    text-align: center;
+.Community-title {
+   text-align: center;
+}
+.community-flex img{
+    width: 100%;
+}
+.half-color{
+    color: lightslategrey;
+    font-weight: 900;
+}
+.Community-title:hover{
+    color: mediumpurple;
+    padding: 0px 10px;
+}
+.Community-box{
+    width: 25%;
+    height: 25%;
+    background-color:darkgrey ;
+    padding: 5%;
+    border-radius: 15px;
+    box-shadow:  10px 10px 15px lightgray , -15px -15px lightgray;
+    margin-right: 15%;
+}
+
+.Community-form input,
+button {
     font-size: 20px;
-    background-color: lightslategrey;
-    color: white;
+    margin-top: 15px;
+    border: 1px solid lightgray;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.Community-form button {
+    background-color:#3A3A3A;
+    color: whitesmoke;
+    font-weight: 600;
+    border: 0;
+    padding: 5px 50px;
 }
 
 
-
+/* -------------
+   Footer Start
+--------------- */
 
 
 
@@ -151,6 +185,7 @@ Popular Collection
 }
 .footer-title{
     font-size: 24px;
+    padding-top: 5%;
 }
 .footer-div{
     color: white;
@@ -159,7 +194,9 @@ Popular Collection
     margin-bottom: 20px;
 }
 
-
+/* -------------
+   Footer End
+--------------- */
 
 /*------------
 Media Queries
@@ -167,12 +204,12 @@ Media Queries
 
 /* Mobile Devices */
 @media only screen and (max-width:688px) {
+
     .nav-bar{
         width: 100%;
     }
     .nav-bar a {
-        display: flex
-        ;
+        display: flex;
     }
     h3 {
         position: relative;
@@ -182,9 +219,9 @@ Media Queries
         display:block;
     }
     .influencer .width-half {
-        width: 90%;
+        width: 85%;
     }
-    
+
     .boxes {
         grid-template-columns: repeat(1,1fr);
 
@@ -192,11 +229,30 @@ Media Queries
     .boxes h3{
         padding-left: 15px ;
     }
+    .community{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    .Community-box{
+        width: 85%;
+
+    }
+    .Community img{
+        width: 100%;
+    }
+    .footer-div{
+        width: 100%;
+    }
+
 }
+
 /* ------------
 tablet devices
 ---------------- */
+
 @media only screen and (min-width:688px) and (max-width:992px){
+    
     .nav-bar{
         width: 100%;
     }
@@ -212,5 +268,21 @@ tablet devices
         grid-template-columns: repeat(2,1fr);
 
     }
+    .community{
+        display: flex;
+        flex-direction: column;
+        padding-left: 20%;
+    }
+    .Community-box{
+        width: 60%;
+        
+    }
+    .Community img{
+        width: 100%;
+    }
+    .footer-div{
+        width: 100%;
+    }
+
     
 }
