@@ -9,12 +9,29 @@
     padding-top: 10% ;
     padding-left: 10% ;
 }
+.nav-bar h3{
+    font-size: 25px;
+    font-weight:bolder;
+    color:#3A3A3A;
+}
 .nav-bar a{
     text-decoration: none;
-    padding-right: 60px ;
+    padding: 5px 10px ;
     color: black;
+    font-weight: 700;
+}
+.nav-bar > .Home{
+    margin-right: 15%;
 }
 
+.Home :hover{
+    background-color:#3A3A3A;
+    color: aliceblue;
+    border-radius: 40px;
+    padding: 5px 10px;
+
+ 
+}
 /*------------------------
 common styles or utilities
 -------------------------*/
@@ -79,22 +96,21 @@ Popular Collection
 }
 .boxes img{
     width: 100%;
-    
 
 }
 
-.boxes .see-more{
-    text-align: right;
+.see-more{
+   text-align: right;
+   padding-right: 15%;
 }
 
 .see-more a{
     text-decoration: none;
     color: #3A3A3A;
+    font-weight: 700;
 }
 
 .box{
-    
-    text-align: left;
     background-color: aliceblue;
     padding: 10px;
     border-radius: 5px;
@@ -109,6 +125,25 @@ Popular Collection
 .fa-star.filled {
     color: gold;
 }
+
+/*-------------
+  Join Our Community
+------------- */
+
+.Community-title{
+    text-align: center;
+}
+.Community-form{
+    text-align: center;
+    font-size: 20px;
+    background-color: lightslategrey;
+    color: white;
+}
+
+
+
+
+
 
 .influencer-footer{
     background: #0A0826;
